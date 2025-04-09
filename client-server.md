@@ -1,6 +1,6 @@
 # Client-Server Architecture
 
-![image.png](Client-Server%20Architecture%201d01fec92daa803bbf39e437010e1fc7/image.png)
+![image.png](assets/Client-Server.png)
 
 **Client-Server Architecture** is a **computing model** where tasks or workloads are divided between two main entities:
 
@@ -30,4 +30,4 @@
 - **Security** (sensitive data stays on the server)
 - **Reliability** (servers can be monitored and maintained independently)
 
-This sounds simple, but there’s a big question: ***How does the client even know where to find the server?***
+This sounds simple, but there’s a big question: ***How is the client even aware of the server's location?***
