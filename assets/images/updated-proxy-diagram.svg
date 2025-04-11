@@ -1,0 +1,119 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Forward vs. Reverse Proxy Architecture</text>
+  
+  <!-- Forward Proxy Section -->
+  <rect x="50" y="70" width="350" height="450" fill="#f0f8ff" stroke="#000" stroke-width="2" rx="10" ry="10"/>
+  <text x="225" y="100" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Forward Proxy</text>
+  
+  <!-- Client devices -->
+  <rect x="80" y="140" width="70" height="40" fill="#fff" stroke="#000" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="115" y="165" font-family="Arial" font-size="12" text-anchor="middle">Client 1</text>
+  
+  <rect x="80" y="200" width="70" height="40" fill="#fff" stroke="#000" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="115" y="225" font-family="Arial" font-size="12" text-anchor="middle">Client 2</text>
+  
+  <rect x="80" y="260" width="70" height="40" fill="#fff" stroke="#000" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="115" y="285" font-family="Arial" font-size="12" text-anchor="middle">Client 3</text>
+  
+  <!-- Forward Proxy Server -->
+  <rect x="200" y="180" width="90" height="80" fill="#4da6ff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
+  <text x="245" y="215" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Forward</text>
+  <text x="245" y="235" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Proxy</text>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="350" cy="220" rx="50" ry="30" fill="#fff" stroke="#666" stroke-width="2"/>
+  <text x="350" y="225" font-family="Arial" font-size="14" text-anchor="middle">Internet</text>
+  
+  <!-- External Servers -->
+  <rect x="200" y="350" width="70" height="50" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="235" y="380" font-family="Arial" font-size="12" text-anchor="middle">Server A</text>
+  
+  <rect x="300" y="350" width="70" height="50" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="335" y="380" font-family="Arial" font-size="12" text-anchor="middle">Server B</text>
+  
+  <!-- Arrows for Forward Proxy -->
+  <!-- Client to Proxy -->
+  <line x1="150" y1="160" x2="200" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="220" x2="200" y2="220" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="280" x2="200" y2="240" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Proxy to Internet -->
+  <line x1="290" y1="220" x2="300" y2="220" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Internet to Servers -->
+  <line x1="350" y1="250" x2="235" y2="350" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="250" x2="335" y2="350" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Forward Proxy Features -->
+  <text x="100" y="430" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Features:</text>
+  <text x="100" y="455" font-family="Arial" font-size="13" text-anchor="start">• Client anonymity</text>
+  <text x="100" y="475" font-family="Arial" font-size="13" text-anchor="start">• Content filtering</text>
+  <text x="100" y="495" font-family="Arial" font-size="13" text-anchor="start">• Access control</text>
+  
+  <text x="250" y="430" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Examples:</text>
+  <text x="250" y="455" font-family="Arial" font-size="13" text-anchor="start">• Squid</text>
+  <text x="250" y="475" font-family="Arial" font-size="13" text-anchor="start">• Privoxy</text>
+  <text x="250" y="495" font-family="Arial" font-size="13" text-anchor="start">• NGINX (configured)</text>
+  
+  <!-- Reverse Proxy Section -->
+  <rect x="500" y="70" width="350" height="450" fill="#f9f9e6" stroke="#000" stroke-width="2" rx="10" ry="10"/>
+  <text x="675" y="100" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Reverse Proxy</text>
+  
+  <!-- Internet Cloud - MOVED DOWN -->
+  <ellipse cx="550" cy="265" rx="50" ry="30" fill="#fff" stroke="#666" stroke-width="2"/>
+  <text x="550" y="270" font-family="Arial" font-size="14" text-anchor="middle">Internet</text>
+  
+  <!-- Client device - ONLY USER 1 NOW -->
+  <rect x="520" y="180" width="70" height="40" fill="#fff" stroke="#000" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="555" y="205" font-family="Arial" font-size="12" text-anchor="middle">User 1</text>
+  
+  <!-- Reverse Proxy Server -->
+  <rect x="650" y="225" width="90" height="80" fill="#ff9999" stroke="#cc0000" stroke-width="2" rx="10" ry="10"/>
+  <text x="695" y="260" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Reverse</text>
+  <text x="695" y="280" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Proxy</text>
+  
+  <!-- Internal App Servers -->
+  <rect x="600" y="360" width="80" height="50" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="640" y="390" font-family="Arial" font-size="12" text-anchor="middle">App Server 1</text>
+  
+  <rect x="710" y="360" width="80" height="50" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="750" y="390" font-family="Arial" font-size="12" text-anchor="middle">App Server 2</text>
+  
+  <!-- Arrows for Reverse Proxy -->
+  <!-- Internet to Proxy -->
+  <line x1="600" y1="265" x2="650" y2="265" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Client to Internet - ONLY ONE ARROW NOW -->
+  <line x1="555" y1="220" x2="550" y2="245" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Proxy to Servers -->
+  <line x1="695" y1="305" x2="640" y2="360" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="695" y1="305" x2="750" y2="360" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Reverse Proxy Features -->
+  <text x="550" y="430" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Features:</text>
+  <text x="550" y="455" font-family="Arial" font-size="13" text-anchor="start">• Load balancing</text>
+  <text x="550" y="475" font-family="Arial" font-size="13" text-anchor="start">• SSL termination</text>
+  <text x="550" y="495" font-family="Arial" font-size="13" text-anchor="start">• DDoS protection</text>
+  
+  <text x="700" y="430" font-family="Arial" font-size="14" text-anchor="start" font-weight="bold">Examples:</text>
+  <text x="700" y="455" font-family="Arial" font-size="13" text-anchor="start">• NGINX</text>
+  <text x="700" y="475" font-family="Arial" font-size="13" text-anchor="start">• HAProxy</text>
+  <text x="700" y="495" font-family="Arial" font-size="13" text-anchor="start">• Apache mod_proxy</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Flow descriptions -->
+  <text x="150" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Client requests</text>
+  <text x="300" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Forwarded</text>
+  <text x="300" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Server responses</text>
+  
+  <text x="470" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Client requests</text>
+  <text x="750" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Internal routing</text>
+</svg>
