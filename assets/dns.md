@@ -53,9 +53,9 @@ When you type `www.example.com` in a browser:
 | **Authoritative Server** | Has the final answer (IP address or resource record). |
 | **Cache** | Temporary storage to avoid repeating resolution process. |
 
-![image.png](Domain%20Name%20System%201d01fec92daa802b9492fe5c4f239b25/image.png)
+![image.png](./assets/images/DNS_1.png)
 
-![DNS.png](Domain%20Name%20System%201d01fec92daa802b9492fe5c4f239b25/DNS.png)
+![DNS.png](./assets/images/DNS_2.png)
 
 ## 📄 DNS Record Types (VERY Important)
 
