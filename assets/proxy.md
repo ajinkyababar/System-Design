@@ -6,7 +6,7 @@ A **proxy server** acts as an **intermediary** between a client (like your brows
 
 Think of it like a **middleman**.
 
-![updated-proxy-diagram.svg](Proxy%201d01fec92daa80cba051d97aaf094dba/updated-proxy-diagram.svg)
+![updated-proxy-diagram.svg](./images/updated-proxy-diagram.svg)
 
 ## 🔹 Types of Proxy Servers
 
